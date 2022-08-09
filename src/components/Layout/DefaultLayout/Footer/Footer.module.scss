@@ -1,0 +1,28 @@
+.wrapper {
+    width: 100%;
+    justify-content: center;
+    background-color: hsla(120, 100%, 50%, 0.3);
+    height: 150px;
+
+    display: flex;
+}
+
+.inner {
+    height: 100%;
+    width: var(--default-layout-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+.content3 {
+    width: 350px;
+    text-align: center;
+    font-size: 17px;
+}
