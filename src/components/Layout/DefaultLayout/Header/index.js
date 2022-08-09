@@ -28,7 +28,9 @@ function Header() {
                     <a href="#">Contact</a>
                     <a href="#">Theme</a>
                     <FontAwesomeIcon icon={faArrowRightToBracket} />
-                    <a className={cx('login')}>Login</a>
+                    <a className={cx('login')} href="#">
+                        Login
+                    </a>
                 </div>
             </div>
         </header>
