@@ -106,14 +106,36 @@
 }
 
 .actions {
-    position: relative;
-    display: flex;
     font-weight: bold;
     font-family: 'Brush Script MT', cursive;
     font-size: 24px;
-    align-items: center;
 
-    a {
-        padding-right: 50px;
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    li {
+        list-style: none;
+    }
+    ul > li > a {
+        padding: 0 25px;
+    }
+    ul > li:hover > a {
+        background-color: red;
+    }
+    ul > li:hover > ul {
+        margin-top: -2px;
+        display: block;
+        background-color: blanchedalmond;
+    }
+    // cấp 1
+    li ul {
+        display: none;
+        position: absolute;
+        padding: 0 42px;
+    }
+    ul > li > ul > li:hover > a {
+        background-color: rebeccapurple;
+        color: red;
     }
 }

@@ -1,6 +1,15 @@
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faMagnifyingGlass, faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import {
+    faCircleXmark,
+    faMagnifyingGlass,
+    faArrowRightToBracket,
+    faListCheck,
+    faAddressCard,
+    faProjectDiagram,
+    faTheaterMasks,
+    faAngleDown,
+} from '@fortawesome/free-solid-svg-icons';
 import styles from './Header.module.scss';
 import logo from './../../../../assets/images/logo.jpg';
 
@@ -23,15 +32,45 @@ function Header() {
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </button>
                 </div>
-                <div className={cx('actions')}>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Theme</a>
-                    <FontAwesomeIcon icon={faArrowRightToBracket} />
-                    <a className={cx('login')} href="#">
-                        Login
-                    </a>
-                </div>
+                <nav className={cx('actions')}>
+                    <ul>
+                        <li>
+                            <a href="#skills">
+                                <FontAwesomeIcon icon={faListCheck} />
+                                Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                <FontAwesomeIcon icon={faProjectDiagram} />
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <FontAwesomeIcon icon={faAddressCard} />
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <FontAwesomeIcon icon={faTheaterMasks} />
+                                Theme
+                                <FontAwesomeIcon icon={faAngleDown} />
+                            </a>
+                            <ul>
+                                <li>Theme1</li>
+                                <li>Theme1</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a className={cx('login')} href="#">
+                                <FontAwesomeIcon icon={faArrowRightToBracket} />
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
     );

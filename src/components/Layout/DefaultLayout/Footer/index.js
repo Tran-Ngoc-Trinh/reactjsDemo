@@ -15,10 +15,9 @@ function Footer() {
                 </div>
                 <div className={cx('content2')}>
                     <p>AROUND THE WEB</p>
-                    <FontAwesomeIcon icon={faCircleXmark}></FontAwesomeIcon>
-                    <FontAwesomeIcon icon={faCircleXmark}></FontAwesomeIcon>
-                    <FontAwesomeIcon icon={faCircleXmark}></FontAwesomeIcon>
-                    <FontAwesomeIcon icon={faCircleXmark}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faCircleXmark} className={cx('fontawesome')}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faCircleXmark} className={cx('fontawesome')}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faCircleXmark} className={cx('fontawesome')}></FontAwesomeIcon>
                 </div>
                 <div className={cx('content3')}>
                     <p>ABOUT FREELANCER</p>
